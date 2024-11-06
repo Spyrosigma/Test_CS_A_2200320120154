@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>Currency Converter</h1>
+        <form id="currency-form">
+            <label for="amount">Amount:</label>&nbsp;<input type="text" id="amount" required>
+            <select id="fromCurrency" required>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="INR">INR</option>
+            </select>
+            <br><br>
+            <label for="result">Convert:</label>&nbsp;
+            <input type="text" id="result" readonly>
+            <select id="toCurrency" required>
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+            <br><br><br>
+            <button type="submit">Convert</button>
+        </form>
+    </div>
+    <footer> SpyroCurrency &copy; 2024 </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

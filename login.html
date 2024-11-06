@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>Login</h1>
+        <form action="" id="login-form">
+            <label>Username:</label>&nbsp;<input type="text" name="username" id="username" required>
+            <br><br>
+            <label>Password:</label>&nbsp;<input type="password" name="password" id="pswd" required> <span id="strength"></span>
+            <br><br>
+            <button type="submit">Login</button> &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset" class="reset">Reset</button>
+        </form> <br>
+        <p>Don't have an account? <a href="signup.html">Signup</a> </p>
+    </div>
+    <footer> SpyroCurrency &copy; 2024 </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const pswd = document.getElementById('pswd');
+            const form = document.getElementById('login-form');
+            const strength = document.getElementById('strength');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                window.location.href = 'index.html';
+            });
+
+            pswd.addEventListener('input', function () {
+                const pswdValue = pswd.value;
+                let color = '';
+                let text = '';
+                if (pswdValue.length < 8) {
+                    color = 'red';
+                    text = 'Weak';
+                } else if (pswdValue.length < 12) {
+                    color = 'orange';
+                    text = 'Medium';
+                } else {
+                    color = 'green';
+                    text = 'Strong';
+                }
+                strength.style.color = color;
+                strength.innerHTML = text;
+            });
+        });
+    </script>
+</body>
+
+</html>

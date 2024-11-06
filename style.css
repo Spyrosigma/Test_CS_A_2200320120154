@@ -1,0 +1,65 @@
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form{
+    color: white;
+    width: 40%; 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7%;
+    border: 2px solid white;
+    padding: 10px;
+}
+.form h1{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+    text-decoration: 2px white underline;
+}
+.form button{
+    background-color: #23e629;
+    color: rgb(0, 0, 0);
+    padding: 9px 7px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 7%;
+    font-weight: bold;
+
+}
+
+.form .butt {
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+.form .reset{
+    background-color: #e62323;
+    color: rgb(0, 0, 0);
+    padding: 9px 7px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 7%;
+    font-weight: bold;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
